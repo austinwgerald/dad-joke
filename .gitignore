@@ -2,7 +2,6 @@ node_modules
 *.log
 /out
 .vscode
-/yarn.lock
 public
 
 # dependencies

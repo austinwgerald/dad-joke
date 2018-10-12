@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import Fade from 'react-reveal/Fade';
 
 class App extends Component {
   constructor(props) {
@@ -55,14 +55,16 @@ class App extends Component {
         <div className="Message">
           {this.state.message}
         </div>
-        <div className="Joke">
-          {this.state.joke.split("\n").map((i, key) => {
-            return <div key={key}>{i}</div>;
-          })}
-        </div>
+        <Fade left spy={this.state.joke}>
+          <div className="Joke">
+            {this.state.joke.split("\n").map((i, key) => {
+              return <div key={key}>{i}</div>;
+            })}
+          </div>
+        </Fade>
         <br /><br />
         <button className="Button" onClick={this.handleClick}>
-          &#xab; ACTIVATE LASERS (get new joke) &#xbb;
+          Another!
         </button>
 
       </div>

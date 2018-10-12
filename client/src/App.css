@@ -1,28 +1,69 @@
-.App {
-  text-align: center;
+
+:root {
+  --main-font-size: 3em;
+  --mobile-font-size: 2em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* App Main */
+@media (min-width: 501px) {
+  .App{
+    padding: 7em;
+    color: white;
+  }
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* App Mobile */
+@media (max-width: 500px) {
+  .App{
+    padding: 2em;
+    color: white;
+  }
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
-.App-intro {
-  font-size: large;
+.Button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Joke Main */
+@media (min-width: 501px) {
+  .Joke{
+    font-size: var(--main-font-size);
+    white-space: pre-line;
+  }
+}
+
+/* Joke Mobile */
+@media (max-width: 500px) {
+  .Joke{
+    font-size: var(--mobile-font-size);
+    white-space: pre-line;
+  }
+}
+
+/* Message Main */
+@media (min-width: 501px) {
+  .Message{
+    font-size: var(--main-font-size);;
+    color: #ff0033;
+  }
+}
+
+/* Message Mobile */
+@media (max-width: 500px) {
+  .Message{
+    font-size: var(--mobile-font-size);;
+    color: #ff0033;
+  }
 }

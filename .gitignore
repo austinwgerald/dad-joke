@@ -2,7 +2,6 @@ node_modules
 *.log
 /out
 .vscode
-public
 
 # dependencies
 /node_modules

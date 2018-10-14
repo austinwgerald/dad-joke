@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import Fade from 'react-reveal/Fade';
+import './App.css';
+import Footer from './Components/Footer'
 
 class App extends Component {
   constructor(props) {
@@ -66,7 +67,8 @@ class App extends Component {
         <button className="Button" onClick={this.handleClick}>
           Another!
         </button>
-
+        
+        <Footer/>
       </div>
     );
   }

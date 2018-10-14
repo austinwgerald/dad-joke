@@ -8,6 +8,20 @@
     text-align: center;
 }
 
+/* Main */
+@media (min-width: 501px) {
+    .Footer{
+        font-size: .85em !important;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 500px) {
+    .Footer{
+        font-size: .75em !important;
+    }
+  }
+
 a {
     color: white;
   }
